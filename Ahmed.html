@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أحمد كمال - موقعي الشخصي</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+        header, nav, footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+            background-color: white;
+            margin: 1rem auto;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, button, textarea {
+            display: block;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0066cc;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مرحباً بكم في موقعي الشخصي</h1>
+        <p>أنا أحمد كمال، طالب ومبرمج ومهتم بالتقنية</p>
+        <img src="https://chat.openai.com/cdn-cgi/imagedelivery/pUbCQO_S1zX2L1f1dNEmGg/5f2f99b8-38c5-42f6-b3c5-37c899c4fa00/public" alt="أحمد كمال - صورة شخصية">
+    </header><nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#portfolio">الأعمال</a>
+    <a href="#tools">برامج حسابية</a>
+    <a href="#contact">تواصل معي</a>
+</nav>
+
+<section id="home">
+    <h2>الرئيسية</h2>
+    <p>مرحباً بك في موقعي الشخصي! هنا ستجد معلومات عني وأعمالي وبعض الأدوات المفيدة التي قمت ببرمجتها.</p>
+    <img src="https://via.placeholder.com/700x300" alt="صورة ترحيبية">
+</section>
+
+<section id="portfolio">
+    <h2>أعمالي</h2>
+    <ul>
+        <li>موقع تعريفي بسيط باستخدام HTML وCSS</li>
+        <li>برامج حسابية بلغة JavaScript</li>
+        <li>نظام تسجيل دخول بسيط</li>
+    </ul>
+    <img src="https://via.placeholder.com/600x250" alt="صورة لمشروعات">
+</section>
+
+<section id="tools">
+    <h2>برامج حسابية</h2>
+
+    <h3>حساب حجم الأسطوانة</h3>
+    <input type="number" id="radius" placeholder="نصف القطر">
+    <input type="number" id="height" placeholder="الارتفاع">
+    <button onclick="calcCylinderVolume()">احسب</button>
+    <p id="cylinderResult"></p>
+
+    <h3>حساب مساحة الدائرة</h3>
+    <input type="number" id="circleRadius" placeholder="نصف القطر">
+    <button onclick="calcCircleArea()">احسب</button>
+    <p id="circleResult"></p>
+
+    <h3>حل معادلة من الدرجة الثانية</h3>
+    <input type="number" id="a" placeholder="المعامل a">
+    <input type="number" id="b" placeholder="المعامل b">
+    <input type="number" id="c" placeholder="المعامل c">
+    <button onclick="solveQuadratic()">حل المعادلة</button>
+    <p id="quadraticResult"></p>
+</section>
+
+<section>
+    <h2>صورة إضافية من أعمالي</h2>
+    <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-oeY9fuhWntRgKcA8T7JxEmtJ/user-pvskv3aSq6lq2rG4BeU1wZhT/img-Hrj6RMjI9Fn1B2EdlMcvujN3.png?st=2025-07-12T12%3A00%3A00Z&se=2025-07-12T18%3A00%3A00Z&sp=r&sv=2021-08-06&sr=b&sig=0UyG1qFyAF8EP3DLKeCaViBe5gTQ7v15zylzvRIa/OM%3D" alt="منشور منصة طاووس التعليمية">
+</section>
+
+<section id="contact">
+    <h2>تواصل معي</h2>
+    <form>
+        <input type="text" placeholder="اسمك">
+        <input type="email" placeholder="بريدك الإلكتروني">
+        <textarea placeholder="رسالتك"></textarea>
+        <button type="submit">إرسال</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 أحمد كمال. جميع الحقوق محفوظة.</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">📘</a>
+        <a href="https://www.instagram.com" target="_blank">📸</a>
+        <a href="https://www.linkedin.com" target="_blank">💼</a>
+        <a href="https://wa.me/249000000000" target="_blank">📱</a>
+    </div>
+</footer>
+
+<script>
+    function calcCylinderVolume() {
+        let r = parseFloat(document.getElementById("radius").value);
+        let h = parseFloat(document.getElementById("height").value);
+        if (!isNaN(r) && !isNaN(h)) {
+            let volume = Math.PI * r * r * h;
+            document.getElementById("cylinderResult").innerText = "الحجم = " + volume.toFixed(2);
+        } else {
+            document.getElementById("cylinderResult").innerText = "يرجى إدخال القيم بشكل صحيح";
+        }
+    }
+
+    function calcCircleArea() {
+        let r = parseFloat(document.getElementById("circleRadius").value);
+        if (!isNaN(r)) {
+            let area = Math.PI * r * r;
+            document.getElementById("circleResult").innerText = "المساحة = " + area.toFixed(2);
+        } else {
+            document.getElementById("circleResult").innerText = "يرجى إدخال نصف القطر بشكل صحيح";
+        }
+    }
+
+    function solveQuadratic() {
+        let a = parseFloat(document.getElementById("a").value);
+        let b = parseFloat(document.getElementById("b").value);
+        let c = parseFloat(document.getElementById("c").value);
+
+        if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
+            let discriminant = b * b - 4 * a * c;
+            if (discriminant > 0) {
+                let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+                let x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+                document.getElementById("quadraticResult").innerText = `الجذور: x1 = ${x1.toFixed(2)}, x2 = ${x2.toFixed(2)}`;
+            } else if (discriminant === 0) {
+                let x = -b / (2 * a);
+                document.getElementById("quadraticResult").innerText = `جذر مزدوج: x = ${x.toFixed(2)}`;
+            } else {
+                document.getElementById("quadraticResult").innerText = "لا توجد جذور حقيقية";
+            }
+        } else {
+            document.getElementById("quadraticResult").innerText = "يرجى إدخال المعاملات بشكل صحيح";
+        }
+    }
+</script>
+
+</body>
+</html
